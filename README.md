@@ -1,14 +1,25 @@
-# Practical Exam
-Please **fork** this repo and **develop your server** based on the protocol described in [pta.pdf][ptad] file (in portuguese). Before coding, I suggest you carefully read the document spec and understand the protocol. Experiment the protocol, using paper and pencil, drawing examples of protocol usage.
+Practical Exam: Servidor PTA (Protocolo de Transferência de Arquivos)
+Autor: José Henrique Barbosa Pena
 
-Please develop your server code in the directory [pta-server][ptas]. The user list that must be accepted by the protocol must be read from the [pta-server/users.txt][ptau] file. The files to be served by your server are in the [pta-server/files][ptaa] directory. Please don't change these files and directories.
+Matrícula: 202600470060
 
-Your server code will be evaluated through an automatic testing tool. This way, in order to test your code you can use the [pta-client.py][ptac] file. This file makes some tests but it is not an extensive test. So, keep in mind that the actual evaluation will test other aspects of your protocol implementation.
+Instituição: Universidade Federal do Pará (UFPA)
 
-You could use **any programming language**. But you must provide instructions in order to successfully run your code. Describe all stuff about libraries, interpreters, versions and so on. After finishing development, you must share the link of your github repo in the evaluation environment ([sigaa.ufpa.br](http://sigaa.ufpa.br/)).
+Repositório: https://github.com/henrylog10/pta
 
-[ptas]: <https://github.com/glaucogoncalves/pta/tree/master/pta-server>
-[ptau]: <https://github.com/glaucogoncalves/pta/tree/master/pta-server/users.txt>
-[ptaa]: <https://github.com/glaucogoncalves/pta/tree/master/pta-server/files>
-[ptac]: <https://github.com/glaucogoncalves/pta/tree/master/pta-client.py>
-[ptad]: <https://github.com/glaucogoncalves/pta/tree/master/pta.pdf>
+Este repositório contém a implementação do servidor para o Protocolo de Transferência de Arquivos (PTA) sobre TCP, desenvolvido como requisito de avaliação prática[cite: 6]. O servidor é capaz de autenticar utilizadores, listar ficheiros disponíveis e transferi-los de forma atómica de acordo com a máquina de estados especificada.
+
+Requisitos e Ambiente de Execução
+Linguagem: Python 3
+Bibliotecas: O projeto utiliza exclusivamente bibliotecas nativas integradas (standard library) do Python (socket, os, sys). Não é necessária qualquer instalação externa via gestor de pacotes.
+
+Compatibilidade: Funcional em ambiente Windows (via PowerShell), bem como em sistemas baseados em Unix/Linux.
+
+Estrutura de Diretórios
+pta-server/pta-server.py: Código-fonte principal da aplicação do servidor PTA.
+
+pta-server/users.txt: Lista de utilizadores autorizados a estabelecer ligação e aceder ao servidor (sensível a maiúsculas e minúsculas).
+
+pta-server/files/: Diretório que armazena os ficheiros estáticos que podem ser requisitados.
+
+pta-client.py: Script do cliente fornecido para a realização de testes automatizados da implementação.
