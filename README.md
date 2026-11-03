@@ -5,8 +5,6 @@ Matrícula: 202600470060
 
 Instituição: Universidade Federal do Pará (UFPA)
 
-Repositório: https://github.com/henrylog10/pta
-
 Este repositório contém a implementação do servidor para o Protocolo de Transferência de Arquivos (PTA) sobre TCP, desenvolvido como requisito de avaliação prática. O servidor é capaz de autenticar utilizadores, listar ficheiros disponíveis e transferi-los de forma atómica de acordo com a máquina de estados especificada.
 
 Requisitos e Ambiente de Execução
